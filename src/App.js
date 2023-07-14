@@ -8,12 +8,12 @@ import Sales from './pages/Sales'
 import Reports from './pages/Reports';
 import Settings from './pages/Settings'
 import HelpDesk from './pages/HelpDesk'
-
+import SubMenu from './components/SubMenu';
 function App() {
   return (
-    <Router>
+    <Router className="container">
         <Sidebar />
-        <div>
+        <div className='content'>
         <Navbar />
         <Routes>
 
@@ -25,6 +25,7 @@ function App() {
           <Route path='/ayuda' exact={true}  Component={HelpDesk}/>
         </Routes>
         </div>
+        <SubMenu />
     </Router>
   );
 }
