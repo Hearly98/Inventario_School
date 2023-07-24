@@ -9,6 +9,7 @@ import Sales from './pages/Sales'
 import Reports from './pages/Reports';
 import Settings from './pages/Settings'
 import HelpDesk from './pages/HelpDesk'
+import ReportAlmacen from './pages/ReportAlmacen';
 function App() {
   return (
     <Router>
@@ -21,7 +22,7 @@ function App() {
           <Route path='/'  exact={true} Component={Home}/>
           <Route path='/logistica'  exact={true} Component={Logistic}/>
           <Route path='/ventas'  exact={true} Component={Sales}/>
-          <Route path='/reportes'  exact={true} Component={Reports}/>
+          <Route path='/reportes'  exact={true} Component={ReportAlmacen}/>
           <Route path='/configuracion'  exact={true} Component={Settings}/>
           <Route path='/ayuda' exact={true}  Component={HelpDesk}/>   
         </Routes>
