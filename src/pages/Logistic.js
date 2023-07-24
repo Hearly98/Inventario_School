@@ -3,7 +3,7 @@ import SubMenu from "../components/SubMenu";
 
 const Logistic = () =>{
     return (
-        <div>
+        <div className="text-red-200">
             Logistica
             <SubMenu>Almacen</SubMenu>
             <SubMenu>Stock Por Almacen</SubMenu>
