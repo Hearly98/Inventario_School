@@ -4,14 +4,14 @@ import Navbar from './components/Navbar';
 import '../src/App.css'
 import Sidebar from './components/Sidebar';
 import Home from './pages/Home';
-import Logistic from './pages/Logistic';
-import Sales from './pages/Sales'
-import Reports from './pages/Reports';
+import Logistic from './pages/Logistics/Logistic';
+import Sales from './pages/Sales/Sales'
+import Reports from './pages/Report/Reports';
 import Settings from './pages/Settings'
-import HelpDesk from './pages/HelpDesk'
-import ReportAlmacen from './pages/ReportAlmacen';
-import ReportVentas from './pages/ReportVentas';
-import Client from './pages/Client';
+import HelpDesk from './pages/HelpDesk/HelpDesk'
+import ReportAlmacen from './pages/Report/ReportAlmacen';
+import ReportVentas from './pages/Report/ReportVentas';
+import Client from './pages/Logistics/Client';
 function App() {
   return (
     <Router>
