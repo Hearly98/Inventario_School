@@ -8,8 +8,8 @@ const Sidebar = () =>{
                 <li className="p-5 border border-gray-500 hover:bg-slate-600">
                     FreakyCo
                 </li>
-                <li className="p-5 border border-gray-500 hover:bg-slate-600">
-                    Nombre del colegio
+                <li className="p-5 border border-gray-500 hover:bg-slate-600 font-medium">
+                Santo tomas de Aquino
                 </li>
                 <li className="p-2 hover:bg-slate-600">
                 <NavLink to="/" exact={true} className="flex m-2" activeclassname="active"><FaIcons.FaHome className="mx-3"/>Inicio</NavLink> 
@@ -25,6 +25,7 @@ const Sidebar = () =>{
                 </li>
                 <li className="p-2 hover:bg-slate-600">
                 <NavLink to="/reportes" exact={true} className="flex m-2" activeclassname="active"><FaIcons.FaChartBar className="mx-3"/>Reportes</NavLink>
+
                 </li>
                 <li className="p-3"></li>
                 <li className="p-2 hover:bg-slate-600">
