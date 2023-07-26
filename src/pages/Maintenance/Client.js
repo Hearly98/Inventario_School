@@ -1,5 +1,6 @@
 import React from "react";
 import * as FaIcons from 'react-icons/fa';
+import { NavLink } from "react-router-dom";
 const Client = () =>{
     return(
         <div>
@@ -9,7 +10,7 @@ const Client = () =>{
             <p className="text-gray-500">Clientes/<a className="cursor-pointer text-sky-500 font-medium">Inicio</a></p>
             </div>
             <div className="bg-blue-500 text-white p-3 rounded w-40">
-            <a className="flex"><FaIcons.FaPlusCircle className="mx-2 m-1"/>Crear Cliente</a>
+            <NavLink to="/crearCliente" className="flex"><FaIcons.FaPlusCircle className="mx-2 m-1"/>Crear Cliente</NavLink>
             </div>
           </section>
             <section className="shadow-lg rounded w-100 h-auto m-3 border border-gray-300">
