@@ -4,15 +4,15 @@ import Navbar from './components/Navbar';
 import '../src/App.css'
 import Sidebar from './components/Sidebar';
 import Home from './pages/Home';
-import Logistic from './pages/Logistics/Logistic';
-import Sales from './pages/Sales/Sales'
+import Products from './pages/Maintenance/Products';
+import Provider from './pages/Maintenance/Provider'
 import Reports from './pages/Report/Reports';
 import Settings from './pages/Settings'
 import HelpDesk from './pages/HelpDesk/HelpDesk'
 import ReportAlmacen from './pages/Report/ReportAlmacen';
 import ReportVentas from './pages/Report/ReportVentas';
 import Client from './pages/Logistics/Client';
-import Login from './login/Login';
+import Client from './pages/Maintenance/Client';
 function App() {
   return (
     <Router>
@@ -26,10 +26,10 @@ function App() {
         <Route path='/login' element={<Login />} />
         <>
           <Route path='/'  exact={true} Component={Home}/>
-          <Route path='/logistica'  exact={true} Component={ReportVentas}/>
-          <Route path='/ventas'  exact={true} Component={Client}/>
-          <Route path='/reportes'  exact={true} Component={ReportAlmacen}/>
-          <Route path='/configuracion'  exact={true} Component={Settings}/>
+          <Route path='/clientes'  exact={true} Component={Client}/>
+          <Route path='/productos'  exact={true} Component={Products}/>
+          <Route path='/proveedores'  exact={true} Component={Provider}/>
+          <Route path='/configuracion'  exact={true} Component={ReportAlmacen}/>
           <Route path='/ayuda' exact={true}  Component={HelpDesk}/>   
           <Route path='/ayuda' exact={true}  Component={HelpDesk}/>   
           </>
