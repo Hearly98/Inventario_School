@@ -8,7 +8,7 @@ const Provider = () =>{
             <h1 className="font-medium text-2xl">Proveedores</h1>
             <p className="text-gray-500">Proveedores/<a className="cursor-pointer text-sky-500 font-medium">Inicio</a></p>
             </div>
-            <div className="bg-blue-500 text-white p-2 rounded w-48">
+            <div className="bg-blue-500 cursor-pointer hover:bg-blue-600 text-white p-2 rounded w-48">
             <a className="flex"><FaIcons.FaPlusCircle className="mx-2 m-1"/>Crear Proveedor</a>
             </div>
           </section>
@@ -18,7 +18,7 @@ const Provider = () =>{
                         <p className="flex font-medium mb-2"><FaIcons.FaFilter className="mx-2 m-1"/>Filtro General</p>
                         <input className="border border-gray-300 m-2 p-1 rounded w-64"></input>
                     </div>
-                    <div className="bg-gray-300 rounded w-48 h-9 p-1.5 mt-10 border border-gray-400 shadow-sm">
+                    <div className="bg-gray-300 hover:bg-gray-400 font-medium cursor-pointer  rounded w-40 h-9 p-1.5 mt-10 border border-gray-400 shadow-sm">
                         <a className="flex"><FaIcons.FaSearch className="mx-2 m-1"/>Buscar</a>
                     </div>
                 </div>
