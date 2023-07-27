@@ -19,7 +19,7 @@ const Client = () =>{
                         <p className="flex font-medium mb-2"><FaIcons.FaFilter className="mx-2 m-1"/>Filtro General</p>
                         <input className="border border-gray-300 m-2 p-1 rounded w-64"></input>
                     </div>
-                    <div className="bg-gray-300 hover:bg-gray-400 font-medium rounded w-40 h-9 p-1.5 mt-10 border border-gray-400 shadow-sm">
+                    <div className="bg-gray-300 hover:bg-gray-400 cursor-pointer  font-medium rounded w-40 h-9 p-1.5 mt-10 border border-gray-400 shadow-sm">
                         <a className="flex"><FaIcons.FaSearch className="mx-2 m-1"/>Buscar</a>
                     </div>
                 </div>

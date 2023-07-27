@@ -22,10 +22,10 @@ const Sidebar = () =>{
     return (
         <div className="w-64 h-screen bg-slate-900 text-base text-white" >
            <ul>
-                <li className="p-5 border border-gray-500 hover:bg-slate-600">
+                <li className="p-5 border cursor-pointer border-gray-500 hover:bg-slate-600">
                     FreakyCo
                 </li>
-                <li className="p-5 border border-gray-500 hover:bg-slate-600 font-medium">
+                <li className="p-5 border border-gray-500 hover:bg-slate-600 cursor-pointer font-medium">
                 Santo tomas de Aquino
                 </li>
                 <li className="p-2 hover:bg-slate-600">
@@ -74,13 +74,13 @@ const Sidebar = () =>{
                 {showReportes && (
                 <ul>
                         <li className="p-3 hover:bg-slate-500">
-                        <NavLink to="/clientes" exact={true} className="flex" activeclassname="active"><FaIcons.FaStopCircle className="mx-3 mt-1"/>Reportes Ventas</NavLink>
+                        <NavLink to="/reporteVentas" exact={true} className="flex" activeclassname="active"><FaIcons.FaStopCircle className="mx-3 mt-1"/>Reportes Ventas</NavLink>
                         </li>
                         <li className="p-3 hover:bg-slate-500">
-                        <NavLink to="/productos" exact={true} className="flex" activeclassname="active"><FaIcons.FaStopCircle className="mx-3 mt-1"/>Reportes Stock</NavLink>
+                        <NavLink to="/reporteStock" exact={true} className="flex" activeclassname="active"><FaIcons.FaStopCircle className="mx-3 mt-1"/>Reportes Stock</NavLink>
                         </li>
                         <li className="p-3 hover:bg-slate-500">
-                        <NavLink to="/proveedores" exact={true} className="flex" activeclassname="active"><FaIcons.FaStopCircle className="mx-3 mt-1"/>Cuentas Por Cobrar</NavLink>
+                        <NavLink to="/cuentasPorCobrar" exact={true} className="flex" activeclassname="active"><FaIcons.FaStopCircle className="mx-3 mt-1"/>Cuentas Por Cobrar</NavLink>
                         </li>
                 </ul>
                 )}

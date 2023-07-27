@@ -8,7 +8,7 @@ const Provider = () =>{
             <h1 className="font-medium text-2xl">Proveedores</h1>
             <p className="text-gray-500">Proveedores/<a className="cursor-pointer text-sky-500 font-medium">Inicio</a></p>
             </div>
-            <div className="bg-blue-500 cursor-pointer hover:bg-blue-600 text-white p-2 rounded w-48">
+            <div className="bg-blue-500 hover:bg-blue-600 cursor-pointer text-white p-2 rounded w-48">
             <a className="flex"><FaIcons.FaPlusCircle className="mx-2 m-1"/>Crear Proveedor</a>
             </div>
           </section>
