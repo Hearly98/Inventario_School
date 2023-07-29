@@ -1,5 +1,6 @@
 import React from "react";
 import * as FaIcons from 'react-icons/fa';
+import { NavLink } from "react-router-dom";
 const Provider = () =>{
     return(
         <div>
@@ -9,7 +10,7 @@ const Provider = () =>{
             <p className="text-gray-500">Proveedores/<a className="cursor-pointer text-sky-500 font-medium">Inicio</a></p>
             </div>
             <div className="bg-blue-500 hover:bg-blue-600 cursor-pointer text-white p-2 rounded w-48">
-            <a className="flex"><FaIcons.FaPlusCircle className="mx-2 m-1"/>Crear Proveedor</a>
+            <NavLink to="/crearProveedor" className="flex"><FaIcons.FaPlusCircle className="mx-2 m-1"/>Crear Proveedor</NavLink>
             </div>
           </section>
             <section className="shadow-lg rounded w-100 h-auto m-3 border border-gray-300">
@@ -29,6 +30,7 @@ const Provider = () =>{
                         <td className="font-medium">Documento</td>
                         <td className="font-medium">Telefono</td>
                         <td className="font-medium">Direccion</td>
+                        <td className="font-medium"></td>
                        </thead>
                        <tbody>
                         filtro de datos de c#

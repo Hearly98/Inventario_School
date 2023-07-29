@@ -12,6 +12,7 @@ import Client from './pages/Maintenance/Client';
 import Settings from './pages/Settings'
 import CreateClient from './pages/Maintenance/CreateClient';
 import CreateProduct from './pages/Maintenance/CreateProduct'
+import CreateProvider from './pages/Maintenance/CreateProvider'
 function App() {
   return (
     <Router>
@@ -28,6 +29,7 @@ function App() {
           <Route path='/crearProducto' exact={true} Component={CreateProduct}/>
           <Route path='/productos'  exact={true} Component={Products}/>
           <Route path='/proveedores'  exact={true} Component={Provider}/>
+          <Route path='/crearProveedor' exact={true} Component={CreateProvider}/>
           <Route path='/reporteVentas'  exact={true} Component={ReportVentas}/>
           <Route path='/reporteStock' exact={true}  Component={ReportAlmacen}/>   
           <Route path='/configuracion' exact={true}  Component={Settings}/>   

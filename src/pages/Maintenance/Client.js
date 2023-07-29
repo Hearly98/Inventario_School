@@ -30,6 +30,7 @@ const Client = () =>{
                         <td className="font-medium">Documento</td>
                         <td className="font-medium">Telefono</td>
                         <td className="font-medium">Direccion</td>
+                        <td className="font-medium"></td>
                        </thead>
                        <tbody>
                         filtro de datos de c#
