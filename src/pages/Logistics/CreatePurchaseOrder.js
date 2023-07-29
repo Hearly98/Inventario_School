@@ -6,6 +6,17 @@ const CreatePurchaseOrder = () =>{
     return(
         <div className="flex-1 bg-gray-200 h-full p-1">
             <section className="p-4">
+            <h1 className="font-medium text-2xl m-2">Crear Orden de Compra</h1>
+            <div className="grid grid-cols-1 md:grid-cols-2 p-2">
+            <div>
+            <label className="font-medium">Nro. de Orden</label>
+            <input className="m-2 p-1 border border-gray-400 flex rounded"/>
+            </div>
+            <div>
+            <label className="font-medium">Fecha de Emisión</label>
+            <input className="m-2 p-1 border border-gray-400 flex rounded"/>  
+            </div>   
+            </div>
             <section className=" bg-slate-50 m-4 rounded border">
                 <h1 className="w-full font-medium text-white text-xl bg-blue-500 p-3">Proveedor</h1>
                <div className="grid grid-cols-1 md:grid-cols-2 p-2">
