@@ -1,8 +1,9 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 const CreateClient = () => {
   return (
-    <div className="bg-gray-100">
+    <div className="flex-1 h-full bg-gray-100">
       <section className="p-6">
         <h1 className="font-medium text-2xl">Crear Cliente</h1> 
       </section>
@@ -18,8 +19,8 @@ const CreateClient = () => {
         <div className="flex flex-col p-3">
           <label>Documento</label>
           <div className="flex">
-          <input className=" border border-gray-300 rounded p-1" />
-          <a className="bg-blue-500 hover:bg-blue-600 p-1 text-yellow-50">Obtener</a>
+          <input className=" border border-gray-300 p-1" />
+          <a className="bg-blue-500 cursor-pointer hover:bg-blue-600 p-1 text-yellow-50">Obtener</a>
           </div>
         </div>
         <div className="flex flex-col p-3">
@@ -39,8 +40,9 @@ const CreateClient = () => {
           <input className="border border-gray-300 rounded p-1" />
         </div>
       </section>        
-        <section className="m-8 flex justify-center font-medium text-yellow-50 ">
-        <a className="bg-green-500 p-3 w-24 text-center rounded shadow-lg hover:bg-green-600">Guardar</a>   
+        <section className="m-8 flex justify-center cursor-pointer font-medium text-yellow-50 ">
+        <a className="bg-green-500 m-2 p-3 w-24 text-center rounded shadow-lg hover:bg-green-600">Guardar</a> 
+        <NavLink to="/clientes" className="bg-blue-500 m-2 p-3 w-36 text-center rounded shadow-lg hover:bg-blue-600">Lista de Clientes</NavLink>
         </section>
     </div>
   );

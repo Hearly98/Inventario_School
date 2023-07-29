@@ -1,18 +1,19 @@
 import React from "react";
 import * as FaIcons from 'react-icons/fa';
+import { NavLink } from "react-router-dom";
 const Products = () =>{
     return(
-        <div>
-          <section className="w-100 bg-gray-100 p-6">
+        <div className=" bg-gray-100 flex-1">
+          <section className="w-100 p-6">
             <div className="flex  justify-between mb-5">
             <h1 className="font-medium text-2xl">Productos</h1>
             <p className="text-gray-500">Productos/<a className="cursor-pointer text-sky-500 font-medium">Inicio</a></p>
             </div>
             <div className="bg-blue-500 hover:bg-blue-600 cursor-pointer text-white p-2 rounded w-48">
-            <a className="flex"><FaIcons.FaPlusCircle className="mx-2 m-1"/>Crear Productos</a>
+            <NavLink to="/crearProducto" className="flex"><FaIcons.FaPlusCircle className="mx-2 m-1"/>Crear Productos</NavLink>
             </div>
           </section>
-            <section className="shadow-lg rounded w-100 h-auto m-3 border border-gray-300">
+            <section className="bg-gray-50 shadow-lg rounded w-100 h-auto m-3 border border-gray-300">
                 <div className="p-6 flex">
                     <div>
                         <p className="flex font-medium mb-2"><FaIcons.FaFilter className="mx-2 m-1"/>Filtro General</p>
@@ -29,7 +30,8 @@ const Products = () =>{
                         <td className="font-medium">Codigo</td>
                         <td className="font-medium">Marca</td>
                         <td className="font-medium">Linea</td>
-                        <td className="font-medium">Tamaño/Modelo</td>
+                        <td className="font-medium">UMD</td>
+                        <td className="font-medium"></td>
                        </thead>
                        <tbody>
                         filtro de datos de c#

@@ -20,7 +20,7 @@ const Sidebar = () =>{
     };
   
     return (
-        <div className="w-64 h-screen bg-slate-900 text-base text-white" >
+        <div className="w-64 h-auto min-h-screen bg-slate-900 text-base text-white" >
            <ul>
                 <li className="p-5 border cursor-pointer border-gray-500 hover:bg-slate-600">
                     FreakyCo
