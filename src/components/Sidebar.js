@@ -26,7 +26,7 @@ const Sidebar = () =>{
                     FreakyCo
                 </li>
                 <li className="p-5 border border-gray-500 hover:bg-slate-600 cursor-pointer font-medium">
-                Santo tomas de Aquino
+                Santo Tomas de Aquino
                 </li>
                 <li className="p-2 hover:bg-slate-600">
                     <NavLink to="/" exact={true} className="flex m-2" activeclassname="active"><FaIcons.FaHome className="mx-3"/>Inicio</NavLink> 
@@ -52,7 +52,7 @@ const Sidebar = () =>{
                     {showLogistica && (
                 <ul>
                         <li className="p-3 hover:bg-slate-500">
-                        <NavLink to="/ordenDeCompra" exact={true} className="flex" activeclassname="active"><FaIcons.FaStopCircle className="mx-3 mt-1"/>Orden de Compra</NavLink>
+                        <NavLink to="/ordenCompra" exact={true} className="flex" activeclassname="active"><FaIcons.FaStopCircle className="mx-3 mt-1"/>Orden de Compra</NavLink>
                         </li>
                         <li className="p-3 hover:bg-slate-500">
                         <NavLink to="/stockAlmacen" exact={true} className="flex" activeclassname="active"><FaIcons.FaStopCircle className="mx-3 mt-1"/>Stock Almacen</NavLink>

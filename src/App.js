@@ -13,6 +13,8 @@ import Settings from './pages/Settings'
 import CreateClient from './pages/Maintenance/CreateClient';
 import CreateProduct from './pages/Maintenance/CreateProduct'
 import CreateProvider from './pages/Maintenance/CreateProvider'
+import PurchaseOrder from './pages/Logistics/PurchaseOrder';
+import CreatePurchaseOrder from './pages/Logistics/CreatePurchaseOrder';
 function App() {
   return (
     <Router>
@@ -30,6 +32,8 @@ function App() {
           <Route path='/productos'  exact={true} Component={Products}/>
           <Route path='/proveedores'  exact={true} Component={Provider}/>
           <Route path='/crearProveedor' exact={true} Component={CreateProvider}/>
+          <Route path='/ordenCompra' exact={true} Component={PurchaseOrder}/>
+          <Route path='/crearOrdenCompra' exact={true} Component={CreatePurchaseOrder}/>
           <Route path='/reporteVentas'  exact={true} Component={ReportVentas}/>
           <Route path='/reporteStock' exact={true}  Component={ReportAlmacen}/>   
           <Route path='/configuracion' exact={true}  Component={Settings}/>   
