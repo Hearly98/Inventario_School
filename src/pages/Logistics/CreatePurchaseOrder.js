@@ -137,6 +137,20 @@ const CreatePurchaseOrder = () =>{
                         <td><button className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded flex"><FaIcons.FaTrash className="mx-2 m-1"/>Remover</button></td>
                         </tr>
                         ))}
+                        <tr className="grid grid-cols-1 md:grid-cols-1 text-sm border border-gray-300 p-3">
+                             
+                        <td className="md:col-span-2">
+                        <div className="flex items-end justify-end" >
+                        <label className="font-medium mx-2 text-base">Importe Total</label>
+                       
+                        <select className="w-12 text-center p-1 bg-gray-200 border border-gray-400">
+                            <option>S/.</option>
+                            <option>$</option>
+                        </select>
+                        <input className="border border-gray-400 p-1 w-auto"/>
+                        </div>
+                        </td>
+                        </tr>
                        </tbody>
                     </table>
                 </div>
@@ -151,7 +165,7 @@ const CreatePurchaseOrder = () =>{
             {/*Section botones de guardado*/}
             <section className="m-8 cursor-pointer flex justify-center font-medium text-yellow-50 ">
             <button className="bg-green-500 m-2 p-3 w-24 text-center rounded shadow-lg hover:bg-green-600">Guardar</button>
-            <NavLink to="/productos" exact className="bg-blue-500 m-2 p-3 hover:bg-blue-600 text-center rounded w-38 shadow-lg">Lista de Productos</NavLink>    
+            <NavLink to="/ordenCompra" exact className="bg-blue-500 m-2 p-3 hover:bg-blue-600 text-center rounded w-38 shadow-lg">Orden de Compras</NavLink>    
             </section>
             </section>
            

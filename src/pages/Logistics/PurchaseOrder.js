@@ -27,9 +27,9 @@ const PurchaseOrder = () =>{
                 <div>
                     <p className="flex font-medium mb-2"><FaIcons.FaFilter className="mx-2 m-1"/>Filtro de Estados</p>
                     <div className="border border-gray-300 p-1 m-2 mt-4 rounded">
-                    <input type="radio" className="mx-2" name="FilterStates"/><label className="text-green-700">Facturados</label> 
-                    <input type="radio" className="mx-2" name="FilterStates"/><label className="text-yellow-500">Pendientes</label> 
-                    <input type="radio" className="mx-2" name="FilterStates"/><label className="text-red-700">Eliminados</label> 
+                    <input type="checkbox" className="mx-2" name="FilterStates"/><label className="text-green-700">Facturados</label> 
+                    <input type="checkbox" className="mx-2" name="FilterStates"/><label className="text-yellow-500">Pendientes</label> 
+                    <input type="checkbox" className="mx-2" name="FilterStates"/><label className="text-red-700">Eliminados</label> 
                     </div>
                     
                 </div>
