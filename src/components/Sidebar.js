@@ -29,20 +29,20 @@ const Sidebar = () =>{
                 Santo Tomas de Aquino
                 </li>
                 <li className="p-2 hover:bg-slate-600">
-                    <NavLink to="/" exact={true} className="flex m-2" activeclassname="active"><FaIcons.FaHome className="mx-3"/>Inicio</NavLink> 
+                    <NavLink to="/" exact className="flex m-2" activeClassName="active"><FaIcons.FaHome className="mx-3"/>Inicio</NavLink> 
                 </li>
                 <li className="p-2 hover:bg-slate-600 " onClick={toggleMantenimiento}>
                     <p className="flex m-2 "><FaIcons.FaTruck className="mx-3 "/>Mantenimiento</p>
                 {showMantenimiento && (
                 <ul>
                         <li className="p-3 hover:bg-slate-500">
-                        <NavLink to="/clientes" exact={true} className="flex" activeclassname="active"><FaIcons.FaStopCircle className="mx-3 mt-1"/>Clientes</NavLink>
+                        <NavLink to="/clientes" exact className="flex" activeClassName="active"><FaIcons.FaStopCircle className="mx-3 mt-1"/>Clientes</NavLink>
                         </li>
                         <li className="p-3 hover:bg-slate-500">
-                        <NavLink to="/productos" exact={true} className="flex" activeclassname="active"><FaIcons.FaStopCircle className="mx-3 mt-1"/>Productos</NavLink>
+                        <NavLink to="/productos" exact className="flex" activeClassName="active"><FaIcons.FaStopCircle className="mx-3 mt-1"/>Productos</NavLink>
                         </li>
                         <li className="p-3 hover:bg-slate-500">
-                        <NavLink to="/proveedores" exact={true} className="flex" activeclassname="active"><FaIcons.FaStopCircle className="mx-3 mt-1"/>Proveedores</NavLink>
+                        <NavLink to="/proveedores" exact className="flex" activeClassName="active"><FaIcons.FaStopCircle className="mx-3 mt-1"/>Proveedores</NavLink>
                         </li>
                 </ul>
                 )}
@@ -52,35 +52,35 @@ const Sidebar = () =>{
                     {showLogistica && (
                 <ul>
                         <li className="p-3 hover:bg-slate-500">
-                        <NavLink to="/ordenCompra" exact={true} className="flex" activeclassname="active"><FaIcons.FaStopCircle className="mx-3 mt-1"/>Orden de Compra</NavLink>
+                        <NavLink to="/ordenCompra" exact className="flex" activeClassName="active"><FaIcons.FaStopCircle className="mx-3 mt-1"/>Orden de Compra</NavLink>
                         </li>
                         <li className="p-3 hover:bg-slate-500">
-                        <NavLink to="/stockAlmacen" exact={true} className="flex" activeclassname="active"><FaIcons.FaStopCircle className="mx-3 mt-1"/>Stock Almacen</NavLink>
+                        <NavLink to="/stockAlmacen" exact className="flex" activeClassName="active"><FaIcons.FaStopCircle className="mx-3 mt-1"/>Stock Almacen</NavLink>
                         </li>
                         <li className="p-3 hover:bg-slate-500">
-                        <NavLink to="/movimientos" exact={true} className="flex" activeclassname="active"><FaIcons.FaStopCircle className="mx-3 mt-1"/>Movimientos</NavLink>
+                        <NavLink to="/movimientos" exact className="flex" activeClassName="active"><FaIcons.FaStopCircle className="mx-3 mt-1"/>Movimientos</NavLink>
                         </li>
                 </ul>
                     )}
                 </li>
                 <li className="p-2 hover:bg-slate-600">
-                <NavLink to="/tesoreria" exact={true} className="flex m-2" activeclassname="active"><FaIcons.FaCashRegister className="mx-3"/>Tesoreria</NavLink>
+                <NavLink to="/tesoreria" exact className="flex m-2" activeClassName="active"><FaIcons.FaCashRegister className="mx-3"/>Tesoreria</NavLink>
                 </li>
                 <li className="p-2 hover:bg-slate-600">
-                <NavLink to="/ventas" exact={true} className="flex m-2" activeclassname="active"><FaIcons.FaMoneyBill className="mx-3"/>Ventas</NavLink>
+                <NavLink to="/ventas" exact className="flex m-2" activeClassName="active"><FaIcons.FaMoneyBill className="mx-3"/>Ventas</NavLink>
                 </li>
                 <li className="p-2 hover:bg-slate-600" onClick={toggleReportes}>
                     <p className="flex m-2 cursor-pointer"><FaIcons.FaChartBar className="mx-3 "/>Reportes</p>
                 {showReportes && (
                 <ul>
                         <li className="p-3 hover:bg-slate-500">
-                        <NavLink to="/reporteVentas" exact={true} className="flex" activeclassname="active"><FaIcons.FaStopCircle className="mx-3 mt-1"/>Reportes Ventas</NavLink>
+                        <NavLink to="/reporteVentas" exact className="flex" activeClassName="active"><FaIcons.FaStopCircle className="mx-3 mt-1"/>Reportes Ventas</NavLink>
                         </li>
                         <li className="p-3 hover:bg-slate-500">
-                        <NavLink to="/reporteStock" exact={true} className="flex" activeclassname="active"><FaIcons.FaStopCircle className="mx-3 mt-1"/>Reportes Stock</NavLink>
+                        <NavLink to="/reporteStock" exact className="flex" activeClassName="active"><FaIcons.FaStopCircle className="mx-3 mt-1"/>Reportes Stock</NavLink>
                         </li>
                         <li className="p-3 hover:bg-slate-500">
-                        <NavLink to="/cuentasPorCobrar" exact={true} className="flex" activeclassname="active"><FaIcons.FaStopCircle className="mx-3 mt-1"/>Cuentas Por Cobrar</NavLink>
+                        <NavLink to="/cuentasPorCobrar" exact className="flex" activeClassName="active"><FaIcons.FaStopCircle className="mx-3 mt-1"/>Cuentas Por Cobrar</NavLink>
                         </li>
                 </ul>
                 )}

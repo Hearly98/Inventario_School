@@ -53,15 +53,15 @@ const CreateProduct = () => {
         <label>Precio Sugerido</label>  
         <div className="flex">
           <input className="border border-gray-300 p-1"/>
-        <select className="border border-gray-300">
+        <select className="border border-gray-300 bg-gray-200">
           <option>SOLES</option>
           <option>DOLARES</option>
         </select></div>
         </div> 
       </section>        
         <section className="m-8 cursor-pointer flex justify-center font-medium text-yellow-50 ">
-        <a className="bg-green-500 m-2 p-3 w-24 text-center rounded shadow-lg hover:bg-green-600">Guardar</a>
-        <NavLink to="/productos" className="bg-blue-500 m-2 p-3 hover:bg-blue-600 text-center rounded w-38 shadow-lg">Lista de Productos</NavLink>    
+        <button className="bg-green-500 m-2 p-3 w-24 text-center rounded shadow-lg hover:bg-green-600">Guardar</button>
+        <NavLink to="/productos" exact className="bg-blue-500 m-2 p-3 hover:bg-blue-600 text-center rounded w-38 shadow-lg">Lista de Productos</NavLink>    
         </section>
     </div>
   );

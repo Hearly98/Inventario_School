@@ -3,23 +3,38 @@ import * as FaIcons from 'react-icons/fa';
 import { NavLink } from "react-router-dom"; 
 
 const CreatePurchaseOrder = () =>{
+    const data = [
+        { nombre: 'Producto 1', cantidad: 5, unidadMedida: 'und', precioUnitario: 10, precioTotal: 50 },
+        { nombre: 'Producto 2', cantidad: 3, unidadMedida: 'kl', precioUnitario: 15, precioTotal: 45 },
+        { nombre: 'Producto 3', cantidad: 2, unidadMedida: 'lt', precioUnitario: 8, precioTotal: 16 }
+     ];
     return(
-        <div className="flex-1 bg-gray-200 h-full p-1">
+        //section fondo
+        <div className="flex-1 bg-gray-100 h-full p-1">
             <section className="p-4">
             <h1 className="font-medium text-2xl m-2">Crear Orden de Compra</h1>
-            <div className="grid grid-cols-1 md:grid-cols-2 p-2">
+            <div className="grid grid-cols-1 md:grid-cols-3 p-4">
             <div>
             <label className="font-medium">Nro. de Orden</label>
-            <input className="m-2 p-1 border border-gray-400 flex rounded"/>
+            <input className=" p-1 border border-gray-400 flex rounded " disabled/>
             </div>
             <div>
             <label className="font-medium">Fecha de Emisión</label>
-            <input className="m-2 p-1 border border-gray-400 flex rounded"/>  
+            <input className=" p-1 border border-gray-400 flex rounded"/>  
             </div>   
+            <div>
+            <label className="font-medium">Fecha de Entrega</label>
+            <input className=" p-1 border border-gray-400 flex rounded" type="date"/>  
+            </div>  
             </div>
-            <section className=" bg-slate-50 m-4 rounded border">
+
+            {/*Section Proveedor */} 
+
+            <section className=" bg-slate-50 m-4 rounded border h-auto">
                 <h1 className="w-full font-medium text-white text-xl bg-blue-500 p-3">Proveedor</h1>
-               <div className="grid grid-cols-1 md:grid-cols-2 p-2">
+
+                {/* Datos Proveedor */} 
+               <div className="grid grid-cols-1 md:grid-cols-2 p-4">
                     <div className="flex flex-col m-2">
                     <label className="font-medium flex">Proveedor</label>
                     <input className="p-1 border rounded border-gray-400"/>
@@ -34,36 +49,112 @@ const CreatePurchaseOrder = () =>{
                     </div> 
                 </div> 
             </section>
-            <section className=" bg-slate-50 m-4 rounded border">
+            {/*Section Contacto*/} 
+
+            <section className=" bg-slate-50 m-4 rounded border h-auto">
+
                 <h1 className="w-full font-medium text-white text-xl bg-blue-500 p-3">Contacto</h1>
-               <div className="grid grid-cols-1 md:grid-cols-2 p-2">
+
+            {/*Section Datos Contacto */} 
+               <div className="grid grid-cols-1 md:grid-cols-2 p-4">
                     <div className="flex flex-col m-2">
                     <label className="font-medium flex">Nombre Contacto</label>
                     <input className="p-1 border rounded border-gray-400"/>
                     </div>
-                    <div className="flex flex-col m-2 ">
+                    <div className="flex flex-col m-2">
                     <label className="font-medium flex">Area</label>
                     <input className="p-1 border rounded border-gray-400"/>
                     </div> 
                 </div> 
             </section>
+            {/*Section Detalle de OC */} 
             <section className=" bg-slate-50 m-4 rounded border">
                 <h1 className="w-full font-medium text-white text-xl bg-blue-500 p-3">Detalle</h1>
-               <div className="flex justify-around">
+                {/*Section Datos Detalle de OC */} 
+               <div className="grid grid-cols-1 md:grid-cols-2 p-4">
                     <div className="flex flex-col m-2">
                     <label className="font-medium flex">Producto</label>
-                    <div className=" flex">
-                    <input className="p-1 border rounded border-gray-400"/>
-                    <a className="cursor-pointer w-28 flex bg-blue-500 hover:bg-blue-600 rounded text-white"><FaIcons.FaPlus className="mx-2 m-1"/>Agregar</a> 
+                    <div className=" flex ">
+                    <input className="p-1 border w-72 border-gray-400"/>
+                    <button className="p-1 cursor-pointer w-32 flex bg-blue-500 hover:bg-blue-600 text-white"><FaIcons.FaPlus className="mx-3 m-1"/>Agregar</button> 
                     </div>
                     </div>
-                    <div className="flex flex-col m-2 ">
-                    <label className="font-medium flex">Area</label>
-                    <input className="p-1 border rounded border-gray-400"/>
+                {/*Section Condicionales para Detalle OC*/}
+                <div className="grid grid-cols-1 md:grid-cols-4 text-sm ml-3 m-4">
+                <div className="flex flex-col">
+                        <label className="font-medium flex">¿Mostrar UM?</label>
+                        <select className="w-24 border border-gray-400 text-center p-1">
+                            <option>SI</option>
+                            <option>NO</option>
+                        </select>
+                        </div> 
+                        <div className="flex flex-col">
+                        <label className="font-medium flex">¿Mostrar Precios?</label>
+                        <select className="w-24 border border-gray-400 rounded text-center p-1">
+                            <option>SI</option>
+                            <option>NO</option>
+                        </select>
+                        </div> 
+                        <div className="flex flex-col">
+                        <label className="font-medium flex">¿Mostrar Total?</label>
+                        <select className="w-24 border border-gray-400 rounded text-center p-1">
+                            <option>SI</option>
+                            <option>NO</option>
+                        </select>
+                        </div> 
+                        <div className="flex flex-col">
+                        <label className="font-medium flex">¿Mostrar Firma?</label>
+                        <select className="w-24 border border-gray-400 rounded text-center p-1">
+                            <option>SI</option>
+                            <option>NO</option>
+                        </select>
+                        </div> 
                     </div> 
-                </div> 
+                    </div> 
+                    {/*Section Tabla de Productos para OC*/}
+                    <div className="border border-gray-300 shadow w-100 h-full m-8 p-6 rounded">
+                    <table className="border w-full">
+                       <thead>
+                       <tr  className="flex p-2 justify-between  bg-slate-400">
+                       <th className="font-medium flex-1">Nombre</th>
+                        <th className="font-medium flex-1">Cant.</th>
+                        <th className="font-medium flex-1">U.M</th>
+                        <th className="font-medium flex-1">P. Unitario</th>
+                        <th className="font-medium flex-1">P. Total</th>
+                        <th className="font-medium flex-1"></th>
+                       </tr>
+                       </thead>
+                       <tbody>
+                         {/* Aquí van las filas y celdas de datos */}
+                         {data.map((item, index) => (
+                        <tr key={index} className="flex p-2 justify-between">
+                        <td className="flex-1">{item.nombre}</td>
+                        <td className="flex-1 text-center">{item.cantidad}</td>
+                        <td className="flex-1 text-center">{item.unidadMedida}</td>
+                        <td className="flex-1 text-center">{item.precioUnitario}</td>
+                        <td className="flex-1 text-center">{item.precioTotal}</td>
+                        {/* botones */}
+                        <td><button className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded flex"><FaIcons.FaTrash className="mx-2 m-1"/>Remover</button></td>
+                        </tr>
+                        ))}
+                       </tbody>
+                    </table>
+                </div>
+            </section>
+            {/*Section Consideraciones */} 
+             <section className=" bg-slate-50 m-4 rounded border h-auto">
+                <h1 className="w-full font-medium text-white text-xl bg-blue-500 p-3">Consideraciones</h1>
+               <div className="m-4">
+               <textarea className="border border-gray-400 p-3 w-full h-auto rounded"/>
+               </div>
+            </section>
+            {/*Section botones de guardado*/}
+            <section className="m-8 cursor-pointer flex justify-center font-medium text-yellow-50 ">
+            <button className="bg-green-500 m-2 p-3 w-24 text-center rounded shadow-lg hover:bg-green-600">Guardar</button>
+            <NavLink to="/productos" exact className="bg-blue-500 m-2 p-3 hover:bg-blue-600 text-center rounded w-38 shadow-lg">Lista de Productos</NavLink>    
             </section>
             </section>
+           
         </div>
     )
 }

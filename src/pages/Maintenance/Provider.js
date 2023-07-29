@@ -7,10 +7,10 @@ const Provider = () =>{
           <section className="w-100 bg-gray-100 p-6">
             <div className="flex  justify-between mb-5">
             <h1 className="font-medium text-2xl">Proveedores</h1>
-            <p className="text-gray-500">Proveedores/<a className="cursor-pointer text-sky-500 font-medium">Inicio</a></p>
+            <p className="text-gray-500">Proveedores/<NavLink to="/" exact className="cursor-pointer text-sky-500 font-medium">Inicio</NavLink></p>
             </div>
             <div className="bg-blue-500 hover:bg-blue-600 cursor-pointer text-white p-2 rounded w-48">
-            <NavLink to="/crearProveedor" className="flex"><FaIcons.FaPlusCircle className="mx-2 m-1"/>Crear Proveedor</NavLink>
+            <NavLink to="/crearProveedor" exact className="flex"><FaIcons.FaPlusCircle className="mx-2 m-1"/>Crear Proveedor</NavLink>
             </div>
           </section>
             <section className="shadow-lg rounded w-100 h-auto m-3 border border-gray-300">
@@ -20,7 +20,7 @@ const Provider = () =>{
                         <input className="border border-gray-300 m-2 p-1 rounded w-64"></input>
                     </div>
                     <div className="bg-gray-300 hover:bg-gray-400 font-medium cursor-pointer  rounded w-40 h-9 p-1.5 mt-10 border border-gray-400 shadow-sm">
-                        <a className="flex"><FaIcons.FaSearch className="mx-2 m-1"/>Buscar</a>
+                        <button className="flex"><FaIcons.FaSearch className="mx-2 m-1"/>Buscar</button>
                     </div>
                 </div>
                 <div className="border border-gray-300 shadow w-100 h-full m-8 p-6 rounded">

@@ -20,7 +20,7 @@ const CreateClient = () => {
           <label>Documento</label>
           <div className="flex">
           <input className=" border border-gray-300 p-1" />
-          <a className="bg-blue-500 cursor-pointer hover:bg-blue-600 p-1 text-yellow-50">Obtener</a>
+          <button className="bg-blue-500 cursor-pointer hover:bg-blue-600 p-1 text-yellow-50">Obtener</button>
           </div>
         </div>
         <div className="flex flex-col p-3">
@@ -41,8 +41,8 @@ const CreateClient = () => {
         </div>
       </section>        
         <section className="m-8 flex justify-center cursor-pointer font-medium text-yellow-50 ">
-        <a className="bg-green-500 m-2 p-3 w-24 text-center rounded shadow-lg hover:bg-green-600">Guardar</a> 
-        <NavLink to="/clientes" className="bg-blue-500 m-2 p-3 w-36 text-center rounded shadow-lg hover:bg-blue-600">Lista de Clientes</NavLink>
+        <button className="bg-green-500 m-2 p-3 w-24 text-center rounded shadow-lg hover:bg-green-600">Guardar</button> 
+        <NavLink to="/clientes" exact className="bg-blue-500 m-2 p-3 w-36 text-center rounded shadow-lg hover:bg-blue-600">Lista de Clientes</NavLink>
         </section>
     </div>
   );
