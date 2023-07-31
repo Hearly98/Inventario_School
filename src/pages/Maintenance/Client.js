@@ -7,7 +7,7 @@ const Client = () =>{
           <section className="w-100 p-6">
             <div className="flex  justify-between mb-5">
             <h1 className="font-medium text-2xl">Clientes</h1>
-            <p className="text-gray-500">Clientes/<NavLink to="/" className="cursor-pointer text-sky-500 font-medium">Inicio</NavLink></p>
+            <p className="text-gray-500"><NavLink to="/" className="cursor-pointer text-sky-500 font-medium">Inicio</NavLink>/Clientes</p>
             </div>
             <div className="bg-blue-500 cursor-pointer hover:bg-blue-700 text-white p-3 rounded w-40">
             <NavLink to="/crearCliente" exact className="flex" ><FaIcons.FaPlusCircle className="mx-2 m-1"/>Crear Cliente</NavLink>

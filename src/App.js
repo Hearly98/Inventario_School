@@ -15,6 +15,9 @@ import CreateProduct from './pages/Maintenance/CreateProduct'
 import CreateProvider from './pages/Maintenance/CreateProvider'
 import PurchaseOrder from './pages/Logistics/PurchaseOrder';
 import CreatePurchaseOrder from './pages/Logistics/CreatePurchaseOrder';
+import StockAlmacen from './pages/Logistics/StockAlmacen';
+import Movements from './pages/Logistics/Movements';
+import NewMovement from './pages/Logistics/NewMovement';
 function App() {
   return (
     <Router>
@@ -25,18 +28,26 @@ function App() {
         <Navbar/>
         <div className='content flex-1'>
         <Routes>
-          <Route path='/'  exact={true} Component={Home}/>
-          <Route path='/clientes'  exact={true} Component={Client}/>
-          <Route path='/crearCliente' exact={true} Component={CreateClient}/>
-          <Route path='/crearProducto' exact={true} Component={CreateProduct}/>
-          <Route path='/productos'  exact={true} Component={Products}/>
-          <Route path='/proveedores'  exact={true} Component={Provider}/>
-          <Route path='/crearProveedor' exact={true} Component={CreateProvider}/>
-          <Route path='/ordenCompra' exact={true} Component={PurchaseOrder}/>
-          <Route path='/crearOrdenCompra' exact={true} Component={CreatePurchaseOrder}/>
-          <Route path='/reporteVentas'  exact={true} Component={ReportVentas}/>
-          <Route path='/reporteStock' exact={true}  Component={ReportAlmacen}/>   
-          <Route path='/configuracion' exact={true}  Component={Settings}/>   
+          <Route path='/'  exact Component={Home}/>
+          {/*Seccion Maintance*/}
+          <Route path='/clientes'  exact Component={Client}/>
+          <Route path='/crearCliente' Component={CreateClient}/>
+          <Route path='/crearProducto' Component={CreateProduct}/>
+          <Route path='/productos' Component={Products}/>
+          <Route path='/proveedores' Component={Provider}/>
+          <Route path='/crearProveedor' Component={CreateProvider}/>
+          {/*Seccion Logistics*/}
+          <Route path='/ordenCompra' Component={PurchaseOrder}/>
+          <Route path='/crearOrdenCompra' Component={CreatePurchaseOrder}/>
+          <Route path='/stockAlmacen' exact Component={StockAlmacen}/>
+          <Route path='/movimientos' exact Component={Movements}/>
+            {/*Seccion de Movimientos de Almacenes*/}
+            <Route path='/nuevoMovimiento' exact Component={NewMovement}/>
+            <Route path='/listaDeMovimientos' exact Component={Movements}/>
+          {/*Seccion Reportes*/}
+          <Route path='/reporteVentas' Component={ReportVentas}/>
+          <Route path='/reporteStock' Component={ReportAlmacen}/>   
+          <Route path='/configuracion' Component={Settings}/>   
           
         </Routes>
         </div>

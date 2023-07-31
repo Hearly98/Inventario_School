@@ -7,7 +7,7 @@ const Provider = () =>{
           <section className="w-100 bg-gray-100 p-6">
             <div className="flex  justify-between mb-5">
             <h1 className="font-medium text-2xl">Proveedores</h1>
-            <p className="text-gray-500">Proveedores/<NavLink to="/" exact className="cursor-pointer text-sky-500 font-medium">Inicio</NavLink></p>
+            <p className="text-gray-500"><NavLink to="/" exact className="cursor-pointer text-sky-500 font-medium">Inicio</NavLink>/Proveedores</p>
             </div>
             <div className="bg-blue-500 hover:bg-blue-600 cursor-pointer text-white p-2 rounded w-48">
             <NavLink to="/crearProveedor" exact className="flex"><FaIcons.FaPlusCircle className="mx-2 m-1"/>Crear Proveedor</NavLink>
