@@ -8,16 +8,22 @@ import Products from './pages/Maintenance/Products';
 import Provider from './pages/Maintenance/Provider'
 import ReportAlmacen from './pages/Report/ReportAlmacen';
 import ReportVentas from './pages/Report/ReportVentas';
+/*Seccion de Mantenimiento*/
 import Client from './pages/Maintenance/Client';
-import Settings from './pages/Settings'
 import CreateClient from './pages/Maintenance/CreateClient';
 import CreateProduct from './pages/Maintenance/CreateProduct'
 import CreateProvider from './pages/Maintenance/CreateProvider'
+/*Seccion de Logistica*/
 import PurchaseOrder from './pages/Logistics/PurchaseOrder';
 import CreatePurchaseOrder from './pages/Logistics/CreatePurchaseOrder';
 import StockAlmacen from './pages/Logistics/StockAlmacen';
 import Movements from './pages/Logistics/Movements';
 import NewMovement from './pages/Logistics/NewMovement';
+/*Seccion de Logistica*/
+import Sales from './pages/Sales/Sales';
+import Cotizacion from './pages/Sales/Cotizacion';
+/*Seccion de Configuracion*/
+import Settings from './pages/Settings'
 function App() {
   return (
     <Router>
@@ -44,6 +50,9 @@ function App() {
             {/*Seccion de Movimientos de Almacenes*/}
             <Route path='/nuevoMovimiento' exact Component={NewMovement}/>
             <Route path='/listaDeMovimientos' exact Component={Movements}/>
+          {/*Seccion Ventas*/}
+          <Route path='/generarCotizacion' exact Component={Cotizacion}/>
+          <Route path='/generarVentas' exact Component={Sales}/>
           {/*Seccion Reportes*/}
           <Route path='/reporteVentas' Component={ReportVentas}/>
           <Route path='/reporteStock' Component={ReportAlmacen}/>   

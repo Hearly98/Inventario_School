@@ -1,10 +1,10 @@
 import React from "react";
 
-const Sales = () =>{
+const Cotizacion = () =>{
     return (
         <div>
-           Ventas
+            Cotizacion
         </div>
     );
 }
-export default Sales;
+export default Cotizacion;

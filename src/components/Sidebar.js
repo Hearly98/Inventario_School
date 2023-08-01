@@ -5,7 +5,7 @@ const Sidebar = () =>{
     const [showMantenimiento, setShowMantenimiento] = useState(false);
     const [showLogistica, setShowLogistica] = useState(false);
     const [showReportes, setShowReportes] = useState(false);
-  
+    const [showVentas, setShowVentas] = useState(false);
     // Funciones para mostrar/ocultar los submenús
     const toggleMantenimiento = () => {
       setShowMantenimiento(!showMantenimiento);
@@ -18,7 +18,9 @@ const Sidebar = () =>{
     const toggleReportes = () => {
       setShowReportes(!showReportes);
     };
-  
+    const toggleVentas =() =>{
+        setShowVentas(!showVentas);
+    }
     return (
         <div className="w-64 h-auto min-h-screen bg-slate-900 text-base text-white" >
            <ul>
@@ -66,9 +68,20 @@ const Sidebar = () =>{
                 <li className="p-2 hover:bg-slate-600">
                 <NavLink to="/tesoreria" exact className="flex m-2" activeClassName="active"><FaIcons.FaCashRegister className="mx-3"/>Tesoreria</NavLink>
                 </li>
-                <li className="p-2 hover:bg-slate-600">
-                <NavLink to="/ventas" exact className="flex m-2" activeClassName="active"><FaIcons.FaMoneyBill className="mx-3"/>Ventas</NavLink>
+                <li className="p-2 hover:bg-slate-600" onClick={toggleVentas}>
+                <p className="flex m-2" ><FaIcons.FaTruck className="mx-3"/>Ventas</p>
+                    {showVentas && (
+                    <ul>
+                        <li className="p-3 hover:bg-slate-500">
+                        <NavLink to="/generarCotizacion" exact className="flex" activeClassName="active"><FaIcons.FaStopCircle className="mx-3 mt-1"/>Cotizaciones</NavLink>
+                        </li>
+                        <li className="p-3 hover:bg-slate-500">
+                        <NavLink to="/generarVentas" exact className="flex" activeClassName="active"><FaIcons.FaStopCircle className="mx-3 mt-1"/>Ventas</NavLink>
+                        </li>
+                    </ul>
+                )}
                 </li>
+
                 <li className="p-2 hover:bg-slate-600" onClick={toggleReportes}>
                     <p className="flex m-2 cursor-pointer"><FaIcons.FaChartBar className="mx-3 "/>Reportes</p>
                 {showReportes && (
