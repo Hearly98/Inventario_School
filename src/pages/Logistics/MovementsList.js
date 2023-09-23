@@ -3,6 +3,7 @@ import * as FaIcons from 'react-icons/fa';
 const NewMovement = () =>{
     return(
         <div>
+        <hr className="border-gray-300"></hr>
         <section className="w-100 p-6">
           <div className="flex justify-between">
           <h1 className="font-medium text-2xl">Movimientos de Almacén</h1>

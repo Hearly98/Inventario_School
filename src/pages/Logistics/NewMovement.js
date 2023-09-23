@@ -8,7 +8,8 @@ const NewMovement = () =>{
      ];
     return(
             <div>
-                <section className="border border.gray-400">
+            
+                <section className="border border-gray-300">
                 <aside className=" h-auto gap-6 shadow border border-gray-300 rounded m-3">
                     <ul className="grid grid-cols-1 md:grid-cols-3 m-4">
                         <li className="flex flex-col p-3">
