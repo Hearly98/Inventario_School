@@ -37,7 +37,7 @@ const ReportAlmacen = () =>{
                         <input className="border p-1"></input>
                     </div>
                    <div className="w-100 m-6">
-                   <a className="p-2 px-6 w-100 bg-blue-500 text-white text-center">Buscar</a>
+                   <button className="p-2 px-6 w-100 bg-blue-500 text-white text-center">Buscar</button>
                    </div>
             </section>
             <section className="border border-gray-300 shadow w-100 h-full m-4 p-6 rounded-lg">

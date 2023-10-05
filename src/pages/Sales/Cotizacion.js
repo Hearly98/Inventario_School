@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import * as FaIcons from 'react-icons/fa';
 import DatePicker from 'react-datepicker'
+import { NavLink } from "react-router-dom";
 import 'react-datepicker/dist/react-datepicker.css'
 const Cotizacion = () =>{
   const [dateRange, setDateRange] = useState([null, null]);  
@@ -17,9 +18,13 @@ const Cotizacion = () =>{
         <div>
         <hr className="border-gray-300"></hr>
         <section className="w-100 p-6">
-          <div className="flex justify-between">
-          <h1 className="font-medium text-2xl">Cotizaciones</h1>
-          </div>        
+            <div className="flex  justify-between mb-5">
+            <h1 className="font-medium text-2xl">Cotización</h1>
+            <p className="text-gray-500"><NavLink to="/" className="cursor-pointer text-sky-500 font-medium">Inicio</NavLink>/Cotizacion</p>
+            </div>
+            <div className="bg-blue-500 cursor-pointer hover:bg-blue-700 text-white p-3 rounded w-44">
+            <NavLink to="/crearCotizacion" exact className="flex" ><FaIcons.FaPlusCircle className="mx-2 m-1"/>Crear Cotización</NavLink>
+            </div>
           </section>
           <section className=" shadow-lg rounded w-auto h-auto m-3 border border-gray-300 bg-slate-50">
                <div className="grid grid-cols-1 md:grid-cols-4 justify-around p-3">
@@ -34,6 +39,7 @@ const Cotizacion = () =>{
                       selected={startDate}
                         onChange={handleChange}
                         isClearable={false}
+                        readOnly={false}
               />
             </div>
                     

@@ -22,6 +22,7 @@ import NewMovement from './pages/Logistics/NewMovement';
 /*Seccion de Logistica*/
 import Sales from './pages/Sales/Sales';
 import Cotizacion from './pages/Sales/Cotizacion';
+import CreateCotizacion from './pages/Sales/CreateCotizacion';
 /*Seccion de Configuracion*/
 import Settings from './pages/Settings'
 function App() {
@@ -52,6 +53,7 @@ function App() {
             <Route path='/listaDeMovimientos' exact Component={Movements}/>
           {/*Seccion Ventas*/}
           <Route path='/generarCotizacion' exact Component={Cotizacion}/>
+          <Route path='/crearCotizacion' exact Component={CreateCotizacion}/>
           <Route path='/generarVentas' exact Component={Sales}/>
           {/*Seccion Reportes*/}
           <Route path='/reporteVentas' Component={ReportVentas}/>
