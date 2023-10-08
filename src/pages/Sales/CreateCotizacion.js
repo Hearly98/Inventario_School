@@ -12,10 +12,10 @@ const CreateCotizacion = () =>{
         //section fondo
         <div className="flex-1 bg-gray-100 h-full p-1">
             <section className="p-4">
-            <h1 className="font-medium text-2xl m-2">Crear Orden de Compra</h1>
+            <h1 className="font-medium text-2xl m-2">Crear Cotización</h1>
             <div className="grid grid-cols-1 md:grid-cols-3 p-4">
             <div>
-            <label className="font-medium">Nro. de Cotizacion</label>
+            <label className="font-medium">Nro. de Cotización</label>
             <input className=" p-1 border border-gray-400 flex rounded " disabled/>
             </div>
             <div>
@@ -92,14 +92,14 @@ const CreateCotizacion = () =>{
                 <div className="grid grid-cols-1 md:grid-cols-4 text-sm ml-3 m-4">
                 <div className="flex flex-col">
                         <label className="font-medium flex">¿Incluye I.G.V.?</label>
-                        <select className="w-24 border border-gray-400 text-center p-1">
+                        <select className="w-24 border border-gray-400 text-center p-1 m-1">
                             <option>SI</option>
                             <option>NO</option>
                         </select>
                         </div> 
                         <div className="flex flex-col">
                         <label className="font-medium flex">¿Mostrar Total?</label>
-                        <select className="w-24 border border-gray-400 rounded text-center p-1">
+                        <select className="w-24 border border-gray-400 rounded text-center p-1 m-1">
                             <option>SI</option>
                             <option>NO</option>
                         </select>
@@ -156,48 +156,60 @@ const CreateCotizacion = () =>{
              <section className=" bg-slate-50 m-4 rounded border h-auto">
                 <h1 className="w-full font-medium text-white text-xl bg-blue-500 p-3">Consideraciones</h1>
                <div className="grid grid-cols-1 md:grid-cols-2 p-4">
-                <div className="flex flex-col-2 m-2">
-                    <label className="font-medium flex">Tipo de Pago</label>
-                    <select className="">
+                <div className="grid grid-col-1 m-2">
+                   <label className="font-medium">Tipo de Pago</label>
+                    <select className="border border-gray-400 rounded text-start m-2">
                         <option>CONTADO</option>
                         <option>CREDITO</option>
                         <option>CONTRAENTREGA</option>
                     </select>
-                    <span>¿Mostrar?</span><input type="checkbox"/>
+                    <div>
+                   <span className="text-sm m-2">¿Mostrar?</span><input className="p-1" type="checkbox"/>
+                   </div>
                 </div>
-                <div className="flex flex-col-2 m-2">
+                <div className="grid grid-col-1 m-2">
                     <label className="font-medium flex">Plazo de Entrega</label>
-                    <textarea></textarea>
-                    <span>¿Mostrar?</span><input type="checkbox"/>
+                    <textarea className="border border-gray-400 m-2"></textarea>
+                   <div>
+                   <span className="text-sm m-2">¿Mostrar?</span><input className="p-1" type="checkbox"/>
+                   </div>
                 </div>
-                <div className="flex flex-col-2 m-2">
+                <div className="grid grid-col-1 m-2">
                     <label className="font-medium flex">Validez de la Oferta</label>
-                    <textarea></textarea>
-                    <span>¿Mostrar?</span><input type="checkbox"/>
+                    <textarea className="border border-gray-400 m-2"></textarea>
+                    <div>
+                   <span className="text-sm m-2">¿Mostrar?</span><input className="p-1" type="checkbox"/>
+                   </div>
                 </div>
-                <div className="flex flex-col-2 m-2">
+                <div className="grid grid-col-1 m-2">
                     <label className="font-medium flex">Consideraciones para la entrega del producto</label>
-                    <textarea></textarea>
-                    <span>¿Mostrar?</span><input type="checkbox"/>
+                    <textarea className="border border-gray-400 m-2"></textarea>
+                    <div>
+                   <span className="text-sm m-2">¿Mostrar?</span><input className="p-1" type="checkbox"/>
+                   </div>
                 </div>
-                <div className="flex flex-col-2 m-2">
+                <div className="grid grid-col-1 m-2">
                     <label className="font-medium flex">Tipo de Pago</label>
-                    <input />
-                    <span>¿Mostrar?</span><input type="checkbox"/>
+                    <textarea className="border border-gray-400 m-2"></textarea>
+                    <div>
+                   <span className="text-sm m-2">¿Mostrar?</span><input className="p-1" type="checkbox"/>
+                   </div>
                 </div>
-                <div className="flex flex-col-2 m-2">
+                <div className="grid grid-col-1 m-2">
+                    <div>
                     <label className="font-medium flex">Mostrar Cuentas Bancarias</label>
-                    <select>
+                    <select className="border border-gray-400 p-1 m-2">
                         <option>SI</option>
                         <option>NO</option>
                     </select>
+                    </div>
                 </div>
                </div>
             </section>
             {/*Section botones de guardado*/}
             <section className="m-8 cursor-pointer flex justify-center font-medium text-yellow-50 ">
             <button className="bg-green-500 m-2 p-3 w-24 text-center rounded shadow-lg hover:bg-green-600">Guardar</button>
-            <NavLink to="/ordenCompra" exact className="bg-blue-500 m-2 p-3 hover:bg-blue-600 text-center rounded w-38 shadow-lg">Orden de Compras</NavLink>    
+            <NavLink to="/generarCotizacion" exact className="bg-blue-500 m-2 p-3 hover:bg-blue-600 text-center rounded w-38 shadow-lg">Cotizaciones</NavLink>    
             </section>
             </section>
            
